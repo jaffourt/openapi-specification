@@ -46,7 +46,11 @@ const argv = options({
 const buildParameterListItem = (p: OpenAPIV3.ParameterObject): Parent => {
   const nodes: any = [];
   nodes.push(htmlNode(`<h3 id="${p.name.toLowerCase()}">${p.name}</h3>`));
-
+  
+  if (p.deprecated) {
+    nodes.push(htmlNode(`<aside class='note'><strong>Deprecated:</strong> ${p.name} is deprecated.</aside>`));
+  }
+  
   if (p.description) {
     nodes.push(paragraph(fromMarkdown(p.description)));
   }
