@@ -48,7 +48,7 @@ const buildParameterListItem = (p: OpenAPIV3.ParameterObject): Parent => {
   const nodes: any = [];
   nodes.push(
     htmlNode(
-      `<h3 class="${clsx({
+      `<h3 class="${clsx("parameter-name", {
         deprecated: p.deprecated,
       })}" id="${p.name.toLowerCase()}">${p.name}</h3>`
     )
