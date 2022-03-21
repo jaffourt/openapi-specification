@@ -85,5 +85,5 @@ export const sortSchemaProperties = (schema: OpenAPIV3.SchemaObject) => {
 
 export const deprecatedAsideNode = (name: string) =>
   htmlNode(
-    `<aside class="note"><strong>Deprecated:</strong> <code>${name}</code> is deprecated.</aside>`
+    `<aside class="deprecated"><strong>Deprecated:</strong>&nbsp;<code>${name}</code> is deprecated.</aside>`
   );

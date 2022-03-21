@@ -148,7 +148,7 @@ const propertyToRow = async (
           "add-link",
           "schema-object-property-key",
           {
-            deprecated: property.deprecated,
+            "deprecated-item": property.deprecated,
           }
         )}"><code>${key}</code></h4>`
       )
