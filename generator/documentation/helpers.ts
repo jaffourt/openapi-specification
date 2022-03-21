@@ -1,5 +1,4 @@
 import { html as htmlNode, link, text } from "mdast-builder";
-import prettier from "prettier";
 import { Node } from "unist";
 /**
  * Copyright 2020 Google LLC
