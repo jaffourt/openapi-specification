@@ -36,7 +36,7 @@
 
     Restricts results to only those places within the specified range. Valid values range between 0 (most affordable) to 4 (most expensive), inclusive. The exact amount indicated by a specific value will vary from region to region.
 
--   <h3 class="parameter-name deprecated-item" id="name">name</h3>
+-   <h3 class="parameter-name deprecated-item hide-from-toc" id="name">name</h3>
 
     <aside class="deprecated"><strong>Deprecated:</strong>&nbsp;<code>name</code> is deprecated.</aside>
 

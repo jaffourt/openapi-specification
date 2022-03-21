@@ -149,6 +149,7 @@ const propertyToRow = async (
           "schema-object-property-key",
           {
             "deprecated-item": property.deprecated,
+            "hide-from-toc": property.deprecated,
           }
         )}"><code>${key}</code></h4>`
       )

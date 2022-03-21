@@ -50,6 +50,7 @@ const buildParameterListItem = (p: OpenAPIV3.ParameterObject): Parent => {
     htmlNode(
       `<h3 class="${clsx("parameter-name", {
         "deprecated-item": p.deprecated,
+        "hide-from-toc": p.deprecated,
       })}" id="${p.name.toLowerCase()}">${p.name}</h3>`
     )
   );
