@@ -1,5 +1,5 @@
 import { html as htmlNode, link, text } from "mdast-builder";
-
+import prettier from "prettier";
 import { Node } from "unist";
 /**
  * Copyright 2020 Google LLC
@@ -82,3 +82,8 @@ export const sortSchemaProperties = (schema: OpenAPIV3.SchemaObject) => {
     return a < b ? -1 : 1;
   };
 };
+
+export const deprecatedAsideNode = (name: string) =>
+  htmlNode(
+    `<aside class="note"><strong>Deprecated:</strong> <code>${name}</code> is deprecated.</aside>`
+  );
